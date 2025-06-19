@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import img from "../../assets/images/heroimg.jpg";
+import img from "../../assets/images/heroimg.PNG";
 
 const Hero = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
