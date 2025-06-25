@@ -1,5 +1,5 @@
 import {
-  FaWifi,
+  FaTv,
   FaPlug,
   FaChair,
   FaSnowflake,
@@ -124,7 +124,7 @@ const ServicesSection = () => {
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
             {[
-              { icon: <FaWifi className="w-8 h-8" />, name: "Free Wi-Fi" },
+              { icon: <FaTv className="w-8 h-8" />, name: "Television" },
               { icon: <FaPlug className="w-8 h-8" />, name: "Charging Ports" },
               { icon: <FaChair className="w-8 h-8" />, name: "Extra Legroom" },
               { icon: <FaSnowflake className="w-8 h-8" />, name: "AC Control" },
