@@ -3,18 +3,18 @@ import img from "../../assets/images/IMG_3631.JPG";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-lightest">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-3 py-1 text-sm font-semibold text-amber-600 bg-amber-100 rounded-full mb-4">
+          <span className="inline-block px-3 py-1 text-sm font-semibold text-secondary-dark bg-secondary-lightest rounded-full mb-4">
             OUR STORY
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Redefining <span className="text-amber-500">Luxury Travel</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-darkest mb-6">
+            Redefining <span className="text-secondary">Luxury Travel</span>
           </h2>
           <div className="max-w-3xl mx-auto">
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-darker">
               Adil Coaches has been setting the standard for premium
               transportation since 1983, combining cutting-edge technology with
               unparalleled comfort.
@@ -33,11 +33,11 @@ const AboutSection = () => {
                 className="object-cover w-full h-full rounded-xl"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg w-3/4">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+            <div className="absolute -bottom-6 -right-6 bg-gray-lightest p-6 rounded-xl shadow-lg w-3/4 border border-gray-lighter">
+              <h3 className="text-2xl font-bold text-primary-darkest mb-2">
                 40+ Years
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-darker">
                 Of excellence in luxury transportation
               </p>
             </div>
@@ -45,10 +45,10 @@ const AboutSection = () => {
 
           {/* Text Column */}
           <div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">
+            <h3 className="text-3xl font-bold text-primary-darkest mb-6">
               Why Choose Adil Coaches
             </h3>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-gray-darker mb-8">
               Founded with a vision to transform road travel, Adil Coaches has
               grown from a single vehicle operation to a fleet of 50+ premium
               coaches serving clients across the region. Our commitment to
@@ -60,37 +60,37 @@ const AboutSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
                 {
-                  icon: <FaBus className="w-8 h-8 text-amber-500" />,
+                  icon: <FaBus className="w-8 h-8 text-secondary" />,
                   title: "Modern Fleet",
                   desc: "State-of-the-art coaches with the latest amenities",
                 },
                 {
-                  icon: <FaUserTie className="w-8 h-8 text-amber-500" />,
+                  icon: <FaUserTie className="w-8 h-8 text-secondary" />,
                   title: "Professional Staff",
                   desc: "Highly trained drivers and attendants",
                 },
                 {
-                  icon: <FaAward className="w-8 h-8 text-amber-500" />,
+                  icon: <FaAward className="w-8 h-8 text-secondary" />,
                   title: "Award Winning",
                   desc: "Recognized for excellence in service",
                 },
                 {
-                  icon: <FaMapMarkedAlt className="w-8 h-8 text-amber-500" />,
+                  icon: <FaMapMarkedAlt className="w-8 h-8 text-secondary" />,
                   title: "Extensive Routes",
                   desc: "Covering major destinations nationwide",
                 },
               ].map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+                  className="bg-gray-lightest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-lighter hover:border-secondary-light"
                 >
                   <div className="flex items-start space-x-4">
                     <div className="flex-shrink-0">{feature.icon}</div>
                     <div>
-                      <h4 className="text-lg font-semibold text-gray-900">
+                      <h4 className="text-lg font-semibold text-primary-darkest">
                         {feature.title}
                       </h4>
-                      <p className="text-gray-600 mt-1">{feature.desc}</p>
+                      <p className="text-gray-darker mt-1">{feature.desc}</p>
                     </div>
                   </div>
                 </div>
@@ -99,10 +99,10 @@ const AboutSection = () => {
 
             {/* CTA */}
             <div className="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
-              <button className="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-full transition-colors shadow-lg hover:shadow-xl">
+              <button className="px-8 py-3 bg-secondary hover:bg-secondary-dark text-gray-lightest font-bold rounded-full transition-colors shadow-lg hover:shadow-xl hover:-translate-y-0.5 transform transition-all duration-300">
                 Explore Our Fleet
               </button>
-              <button className="px-8 py-3 border border-gray-300 hover:border-amber-500 text-gray-700 hover:text-amber-600 font-medium rounded-full transition-colors">
+              <button className="px-8 py-3 border-2 border-secondary text-secondary hover:bg-secondary hover:text-gray-lightest font-bold rounded-full transition-colors duration-300">
                 Contact Our Team
               </button>
             </div>

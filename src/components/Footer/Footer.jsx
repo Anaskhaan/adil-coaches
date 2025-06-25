@@ -1,17 +1,17 @@
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-gray-900 to-black text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gradient-to-b from-primary-darkest to-gray-darkest text-gray-lightest pt-16 pb-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-amber-400 to-yellow-200 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-r from-secondary to-secondary-light bg-clip-text text-transparent">
                 Adil Coaches
               </span>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-gray-lighter text-sm leading-relaxed">
               Premium transportation services with unmatched comfort and luxury.
               Your journey begins with us.
             </p>
@@ -21,7 +21,7 @@ const Footer = () => {
                   <a
                     key={social}
                     href="#"
-                    className="text-gray-400 hover:text-amber-400 transition-colors"
+                    className="text-gray-lighter hover:text-secondary transition-colors"
                   >
                     <span className="sr-only">{social}</span>
                     <svg
@@ -44,7 +44,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-amber-400 mb-6">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-secondary mb-6">
               Quick Links
             </h3>
             <ul className="space-y-3">
@@ -53,7 +53,7 @@ const Footer = () => {
                   <li key={item}>
                     <a
                       href="#"
-                      className="text-gray-400 hover:text-white transition-colors"
+                      className="text-gray-lighter hover:text-gray-lightest transition-colors"
                     >
                       {item}
                     </a>
@@ -65,13 +65,13 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-amber-400 mb-6">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-secondary mb-6">
               Contact Us
             </h3>
-            <address className="not-italic text-gray-400 space-y-3">
+            <address className="not-italic text-gray-lighter space-y-3">
               <p className="flex items-start">
                 <svg
-                  className="h-5 w-5 mr-3 text-amber-400"
+                  className="h-5 w-5 mr-3 text-secondary"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -93,7 +93,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center">
                 <svg
-                  className="h-5 w-5 mr-3 text-amber-400"
+                  className="h-5 w-5 mr-3 text-secondary"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -109,7 +109,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center">
                 <svg
-                  className="h-5 w-5 mr-3 text-amber-400"
+                  className="h-5 w-5 mr-3 text-secondary"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -128,22 +128,22 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-amber-400 mb-6">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-secondary mb-6">
               Newsletter
             </h3>
-            <p className="text-gray-400 mb-4 text-sm">
+            <p className="text-gray-lighter mb-4 text-sm">
               Subscribe to get updates on special offers and luxury travel tips.
             </p>
             <form className="flex">
               <input
                 type="email"
                 placeholder="Your email"
-                className="px-4 py-2 w-full rounded-l-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-amber-400"
+                className="px-4 py-2 w-full rounded-l-md bg-gray-darker text-gray-lightest focus:outline-none focus:ring-2 focus:ring-secondary"
                 required
               />
               <button
                 type="submit"
-                className="bg-amber-500 hover:bg-amber-600 text-black font-medium px-4 py-2 rounded-r-md transition-colors"
+                className="bg-secondary hover:bg-secondary-dark text-primary-darkest font-medium px-4 py-2 rounded-r-md transition-colors"
               >
                 Join
               </button>
@@ -152,18 +152,27 @@ const Footer = () => {
         </div>
 
         {/* Copyright and Bottom */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm">
+        <div className="border-t border-gray-darker pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-light text-sm">
             &copy; {new Date().getFullYear()} Adil Coaches. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">
+            <a
+              href="#"
+              className="text-gray-light hover:text-gray-lighter text-sm transition-colors"
+            >
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">
+            <a
+              href="#"
+              className="text-gray-light hover:text-gray-lighter text-sm transition-colors"
+            >
               Terms of Service
             </a>
-            <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">
+            <a
+              href="#"
+              className="text-gray-light hover:text-gray-lighter text-sm transition-colors"
+            >
               Sitemap
             </a>
           </div>

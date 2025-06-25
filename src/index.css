@@ -1,3 +1,104 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --primary-lightest: #e6f0fe;
+  --primary-lighter: #99c2fa;
+  --primary-light: #4d9ef7;
+  --primary: #1b7cf2;
+  --primary-dark: #165fc2;
+  --primary-darker: #104391;
+  --primary-darkest: #0a2761;
+
+  /* Secondary Colors */
+  --secondary-lightest: #e0fbff;
+  --secondary-lighter: #99f0fb;
+  --secondary-light: #4de4f5;
+  --secondary: #00c7eb;
+  --secondary-dark: #009dbd;
+  --secondary-darker: #00738f;
+  --secondary-darkest: #004a61;
+
+  /* Grayscale (Neutrals) */
+  --gray-lightest: #f9fafb;
+  --gray-lighter: #e5e7eb;
+  --gray-light: #d1d5db;
+  --gray: #9ca3af;
+  --gray-dark: #6b7280;
+  --gray-darker: #4b5563;
+  --gray-darkest: #1f2937;
+
+  /* Status Colors */
+  --success: #10b981; /* green */
+  --warning: #f59e0b; /* yellow */
+  --error: #ef4444; /* red */
+}
+
+/* Primary Backgrounds */
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-primary-light {
+  background-color: var(--primary-light);
+}
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+/* Secondary Backgrounds */
+.bg-secondary {
+  background-color: var(--secondary);
+}
+.bg-secondary-light {
+  background-color: var(--secondary-light);
+}
+.bg-secondary-dark {
+  background-color: var(--secondary-dark);
+}
+
+/* Grayscale Backgrounds */
+.bg-gray-lightest {
+  background-color: var(--gray-lightest);
+}
+.bg-gray-darkest {
+  background-color: var(--gray-darkest);
+}
+
+/* Status Backgrounds */
+.bg-success {
+  background-color: var(--success);
+}
+.bg-warning {
+  background-color: var(--warning);
+}
+.bg-error {
+  background-color: var(--error);
+}
+
+/* Text Colors */
+.text-primary {
+  color: var(--primary);
+}
+.text-primary-dark {
+  color: var(--primary-dark);
+}
+.text-secondary {
+  color: var(--secondary);
+}
+.text-secondary-dark {
+  color: var(--secondary-dark);
+}
+.text-gray-darkest {
+  color: var(--gray-darkest);
+}
+.text-success {
+  color: var(--success);
+}
+.text-warning {
+  color: var(--warning);
+}
+.text-error {
+  color: var(--error);
+}
