@@ -17,24 +17,21 @@ const Header = () => {
     <header
       className={`
       fixed w-full z-50 transition-all duration-300
-      ${isScrolled ? "bg-white/95 shadow-md py-2" : "bg-white/90 py-4"}
-      ${mobileMenuOpen ? "bg-white" : ""}
+      ${
+        isScrolled ? "bg-gray-lightest shadow-md py-2" : "bg-gray-lightest py-4"
+      }
+      ${mobileMenuOpen ? "bg-gray-lightest" : ""}
     `}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
-            {/* <img
-              src="/images/adil-coaches-logo.png"
-              alt="Adil Coaches Logo"
-              className="h-12 mr-3"
-            /> */}
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-blue-900">
+              <span className="text-xl font-bold text-primary-darkest">
                 ADIL COACHES
               </span>
-              <span className="text-xs text-amber-600">
+              <span className="text-xs text-secondary">
                 Luxury Travel Experience
               </span>
             </div>
@@ -47,9 +44,9 @@ const Header = () => {
             to="/"
             end
             className={({ isActive }) => `
-              relative font-medium text-gray-700 hover:text-blue-900 transition-colors
-              ${isActive ? "text-blue-900 font-semibold" : ""}
-              after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-500
+              relative font-medium text-gray-darker hover:text-primary-darkest transition-colors
+              ${isActive ? "text-primary-darkest font-semibold" : ""}
+              after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-secondary
               after:transition-all after:duration-300 hover:after:w-full
               ${isActive ? "after:w-full" : ""}
             `}
@@ -59,9 +56,9 @@ const Header = () => {
           <NavLink
             to="/about"
             className={({ isActive }) => `
-              relative font-medium text-gray-700 hover:text-blue-900 transition-colors
-              ${isActive ? "text-blue-900 font-semibold" : ""}
-              after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-500
+              relative font-medium text-gray-darker hover:text-primary-darkest transition-colors
+              ${isActive ? "text-primary-darkest font-semibold" : ""}
+              after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-secondary
               after:transition-all after:duration-300 hover:after:w-full
               ${isActive ? "after:w-full" : ""}
             `}
@@ -71,9 +68,9 @@ const Header = () => {
           <NavLink
             to="/routes"
             className={({ isActive }) => `
-              relative font-medium text-gray-700 hover:text-blue-900 transition-colors
-              ${isActive ? "text-blue-900 font-semibold" : ""}
-              after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-500
+              relative font-medium text-gray-darker hover:text-primary-darkest transition-colors
+              ${isActive ? "text-primary-darkest font-semibold" : ""}
+              after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-secondary
               after:transition-all after:duration-300 hover:after:w-full
               ${isActive ? "after:w-full" : ""}
             `}
@@ -83,9 +80,9 @@ const Header = () => {
           <NavLink
             to="/fleet"
             className={({ isActive }) => `
-              relative font-medium text-gray-700 hover:text-blue-900 transition-colors
-              ${isActive ? "text-blue-900 font-semibold" : ""}
-              after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-500
+              relative font-medium text-gray-darker hover:text-primary-darkest transition-colors
+              ${isActive ? "text-primary-darkest font-semibold" : ""}
+              after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-secondary
               after:transition-all after:duration-300 hover:after:w-full
               ${isActive ? "after:w-full" : ""}
             `}
@@ -95,9 +92,9 @@ const Header = () => {
           <NavLink
             to="/contact"
             className={({ isActive }) => `
-              relative font-medium text-gray-700 hover:text-blue-900 transition-colors
-              ${isActive ? "text-blue-900 font-semibold" : ""}
-              after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-500
+              relative font-medium text-gray-darker hover:text-primary-darkest transition-colors
+              ${isActive ? "text-primary-darkest font-semibold" : ""}
+              after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-secondary
               after:transition-all after:duration-300 hover:after:w-full
               ${isActive ? "after:w-full" : ""}
             `}
@@ -113,17 +110,17 @@ const Header = () => {
           aria-label="Toggle menu"
         >
           <span
-            className={`bg-blue-900 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+            className={`bg-primary-darkest block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
               mobileMenuOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
             }`}
           ></span>
           <span
-            className={`bg-blue-900 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-1.5 ${
+            className={`bg-primary-darkest block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-1.5 ${
               mobileMenuOpen ? "opacity-0" : "opacity-100"
             }`}
           ></span>
           <span
-            className={`bg-blue-900 block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+            className={`bg-primary-darkest block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
               mobileMenuOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
             }`}
           ></span>
@@ -133,7 +130,7 @@ const Header = () => {
         <div className="hidden md:block ml-6">
           <a
             href="tel:+1234567890"
-            className="flex items-center bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg transition-colors shadow-md"
+            className="flex items-center bg-secondary hover:bg-secondary-dark text-gray-lightest px-4 py-2 rounded-lg transition-colors shadow-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +149,7 @@ const Header = () => {
       <div
         className={`md:hidden ${
           mobileMenuOpen ? "block" : "hidden"
-        } bg-white shadow-lg`}
+        } bg-gray-lightest shadow-lg`}
       >
         <nav className="container mx-auto px-4 py-3">
           <ul className="flex flex-col space-y-4">
@@ -164,8 +161,8 @@ const Header = () => {
                   block py-2 px-3 font-medium rounded-lg transition-colors
                   ${
                     isActive
-                      ? "bg-blue-50 text-blue-900"
-                      : "text-gray-700 hover:bg-gray-100"
+                      ? "bg-primary-lightest text-primary-darkest"
+                      : "text-gray-darker hover:bg-gray-lighter"
                   }
                 `}
                 onClick={() => setMobileMenuOpen(false)}
@@ -180,8 +177,8 @@ const Header = () => {
                   block py-2 px-3 font-medium rounded-lg transition-colors
                   ${
                     isActive
-                      ? "bg-blue-50 text-blue-900"
-                      : "text-gray-700 hover:bg-gray-100"
+                      ? "bg-primary-lightest text-primary-darkest"
+                      : "text-gray-darker hover:bg-gray-lighter"
                   }
                 `}
                 onClick={() => setMobileMenuOpen(false)}
@@ -196,8 +193,8 @@ const Header = () => {
                   block py-2 px-3 font-medium rounded-lg transition-colors
                   ${
                     isActive
-                      ? "bg-blue-50 text-blue-900"
-                      : "text-gray-700 hover:bg-gray-100"
+                      ? "bg-primary-lightest text-primary-darkest"
+                      : "text-gray-darker hover:bg-gray-lighter"
                   }
                 `}
                 onClick={() => setMobileMenuOpen(false)}
@@ -212,8 +209,8 @@ const Header = () => {
                   block py-2 px-3 font-medium rounded-lg transition-colors
                   ${
                     isActive
-                      ? "bg-blue-50 text-blue-900"
-                      : "text-gray-700 hover:bg-gray-100"
+                      ? "bg-primary-lightest text-primary-darkest"
+                      : "text-gray-darker hover:bg-gray-lighter"
                   }
                 `}
                 onClick={() => setMobileMenuOpen(false)}
@@ -228,8 +225,8 @@ const Header = () => {
                   block py-2 px-3 font-medium rounded-lg transition-colors
                   ${
                     isActive
-                      ? "bg-blue-50 text-blue-900"
-                      : "text-gray-700 hover:bg-gray-100"
+                      ? "bg-primary-lightest text-primary-darkest"
+                      : "text-gray-darker hover:bg-gray-lighter"
                   }
                 `}
                 onClick={() => setMobileMenuOpen(false)}
@@ -240,7 +237,7 @@ const Header = () => {
             <li className="pt-2">
               <a
                 href="tel:+1234567890"
-                className="flex items-center justify-center bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg transition-colors shadow-md"
+                className="flex items-center justify-center bg-secondary hover:bg-secondary-dark text-gray-lightest px-4 py-2 rounded-lg transition-colors shadow-md"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <svg
