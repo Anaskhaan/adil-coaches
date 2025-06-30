@@ -5,7 +5,7 @@ const AppLayout = ({ children }) => {
   return (
     <div>
       <Header />
-      <main>
+      <main className="pt-10">
         <div>{children}</div>
       </main>
       <Footer />
