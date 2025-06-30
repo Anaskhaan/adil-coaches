@@ -116,3 +116,9 @@
   100% { transform: translateX(-50%); }
 }
 .animate-marquee { animation: marquee 20s linear infinite; }
+
+@keyframes drive {
+          0% { transform: translateX(-100px) translateY(-50%); }
+          100% { transform: translateX(calc(100vw + 100px)) translateY(-50%); }
+        }
+      

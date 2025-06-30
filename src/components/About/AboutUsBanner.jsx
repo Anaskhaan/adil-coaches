@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const AboutUsBanner = () => {
   return (
     <div className="relative bg-gradient-to-br from-primary-darkest to-primary-darker py-16 px-8 rounded-3xl shadow-2xl overflow-hidden">
@@ -21,12 +23,10 @@ export const AboutUsBanner = () => {
             Your trusted travel partner connecting <span className="font-semibold text-white">Islamabad</span>, <span className="font-semibold text-white">Lahore</span>, <span className="font-semibold text-white">Bannu</span>, and beyond with comfort and reliability.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-secondary hover:bg-secondary-dark text-white px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <Link to="/routes" className="bg-secondary hover:bg-secondary-dark text-white px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg">
               Explore Routes
-            </button>
-            <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-dark px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105">
-              Our Story
-            </button>
+            </Link>
+            
           </div>
         </div>
 
