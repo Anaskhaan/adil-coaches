@@ -1,3 +1,5 @@
+import CEO from "../../assets/images/CEO.jpg";
+
 export const CEOMessage = () => {
   return (
     <div className="relative bg-white py-20 px-6 overflow-hidden">
@@ -13,14 +15,14 @@ export const CEOMessage = () => {
           <div className="relative lg:w-1/3">
             <div className="relative w-64 h-64 mx-auto lg:mx-0 overflow-hidden rounded-2xl shadow-xl border-4 border-white">
               <img 
-                src="/ceo-portrait.jpg" // Replace with actual image path
+                src={CEO} Replace with actual image path
                 alt="CEO of Adil Coaches"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary-darkest to-transparent opacity-30"></div>
             </div>
             <div className="mt-6 text-center lg:text-left">
-              <h3 className="text-2xl font-bold text-primary-dark">Muhammad Adil Khan</h3>
+              <h3 className="text-2xl font-bold text-primary-dark">Malik Bahadur Baz Khan</h3>
               <p className="text-gray-dark">Founder & CEO</p>
               <p className="text-sm text-gray mt-2">Adil Coaches</p>
             </div>
