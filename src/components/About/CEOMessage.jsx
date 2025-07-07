@@ -15,7 +15,7 @@ export const CEOMessage = () => {
           <div className="relative lg:w-1/3">
             <div className="relative w-64 h-64 mx-auto lg:mx-0 overflow-hidden rounded-2xl shadow-xl border-4 border-white">
               <img 
-                src={CEO} Replace with actual image path
+                src={CEO} 
                 alt="CEO of Adil Coaches"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />
