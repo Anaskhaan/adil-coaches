@@ -1,3 +1,8 @@
+import ContactFormSection from "../components/Home/ContactFormSection";
+
+
 export const Contact = () => {
-  return <div>Contact</div>;
+  return <div>
+    <ContactFormSection />
+  </div>;
 };
